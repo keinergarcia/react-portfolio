@@ -4,13 +4,9 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/react-portfolio/",
-  plugins: [
-    react(),
-    svgr({
-      svgrOptions: {
-        icon: true,
-      },
-    }),
-  ],
+  plugins: [react(), svgr({
+    svgrOptions: {
+      icon: true,
+    },
+  })],
 })
